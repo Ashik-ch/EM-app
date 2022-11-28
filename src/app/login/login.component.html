@@ -1,0 +1,47 @@
+<div class="body">
+  <div class="title  text-center pt-4">Auro Events</div>
+  <div class="body container d-block">
+
+    <div class="card text-center text-success" *ngIf="regclick==true">
+      <h1 class="login pt-4"> Login </h1>
+
+      <form action="" class="center">
+        
+        <input class="pt-1 mt-4 rounded-2 " type="text" placeholder="email" [(ngModel)]="email"><br>
+        <input class="pt-1 mt-2  rounded-2" type="text " placeholder="Password" [(ngModel)]="password"><br>
+        <a id='pswd' href="#">Forgot password</a> <br>
+        <button class="btn  mt-4" id="logbtn"> Login</button> <br>
+        <div class="shape " type="button" (click)="Visible()">
+          <u class="a1"> Need an Account </u>
+          <h3 id="reglink">Register</h3>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="card2 text-center text-success" *ngIf="regclick==false">
+      <h1 class=" pt-4" id="regtext"> Register</h1>
+
+      <form action="">
+        <input class="input pt-1 mt-2 rounded-2 " type="text" placeholder="Name"><br>
+        <input class="pt-1 mt-2 rounded-1" type="text" placeholder="Email"><br>
+        <input class="pt-1 mt-2 rounded-1" type="text" placeholder="Date of Birth"><br>
+        <input class="pt-1 mt-2  rounded-1" type="text " placeholder="Usecode"><br>
+        <input class="pt-1 mt-2  rounded-1 " type="text " placeholder="Password"><br>
+        <input class="pt-1 mt-2  rounded-1" type="text " placeholder="Confirm Password"><br>
+
+        <div>
+          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+          <label class="terms">Terms and condition</label>
+        </div><br>
+        <button class="btn rounded-2" id="regbtn">Sign Up</button>
+        <div class="shape2" type="button" (click)="Visible()"> <u class="a2"> Have an Account </u>
+          <h3 class="loglink">Login</h3>
+        </div>
+      </form>
+
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
