@@ -18,7 +18,7 @@ register(name:any, email:any,  dob:any, usecode:any, password:any,confirmpass:an
     password,
     confirmpass
   }
-  return this.http.post("http://localhost:3004/register",data)
+  return this.http.post("http://localhost:3001/register",data)
 }
 
 
@@ -28,6 +28,6 @@ register(name:any, email:any,  dob:any, usecode:any, password:any,confirmpass:an
       email,
       password
     }
-    return this.http.post("http://localhost:3004/login", data)
+    return this.http.post("http://localhost:3001/login", data)
   }
 }
